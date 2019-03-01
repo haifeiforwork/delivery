@@ -24,11 +24,13 @@ spring:
             poolPreparedStatements: false
             maxOpenPreparedStatements: 20
 
+
+#mybatis
 mybatis:
-    typeAliasesPackage: com.snail.model.**
-    mapperLocations: classpath*:/com/snail/**/dao/mapper/*.xml
-    configuration:
-      map-underscore-to-camel-case: true
+  typeAliasesPackage: com.snail.dao.**.entity
+  mapperLocations: classpath*:/com/snail/dao/**/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
 
 server:
   port: 19000

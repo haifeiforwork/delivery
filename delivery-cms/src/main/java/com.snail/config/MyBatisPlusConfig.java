@@ -1,10 +1,12 @@
 /*
+
 package com.snail.config;
 
 import com.baomidou.mybatisplus.plugins.PaginationInterceptor;
 import org.apache.log4j.Logger;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
 
 */
 /**
@@ -13,16 +15,18 @@ import org.springframework.context.annotation.Configuration;
  *//*
 
 
+
 @Configuration
 public class MyBatisPlusConfig {
 
     static final Logger LOGGER = Logger.getLogger(MyBatisPlusConfig.class);
 
-    */
+*/
 /**
      * mybatis-plus 分页插件
      * @return
      *//*
+
 
     @Bean
     public PaginationInterceptor init() {

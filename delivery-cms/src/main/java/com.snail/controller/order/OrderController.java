@@ -1,6 +1,7 @@
 package com.snail.controller.order;
 
-import com.snail.order.service.OrderService;
+import com.snail.dao.order.entity.Order;
+import com.snail.service.order.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,7 +19,8 @@ public class OrderController {
 
     @RequestMapping("/getOrder")
     public void getOrder() {
-        orderService.getOrder("123");
+        Order order = orderService.getById(1L);
+        System.out.println("order:"  + order);
     }
 
 

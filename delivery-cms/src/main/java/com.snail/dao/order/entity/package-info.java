@@ -1,1 +1,1 @@
-package com.snail.dao.entity;
+package com.snail.dao.order.entity;
